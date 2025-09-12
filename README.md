@@ -4,32 +4,26 @@
 A mobile laundromat app that allows users to make payments, earn loyalty rewards, and have real-time machine tracking.
 
 ## Team Members
-<ul>
-  <li>James Ramsey</li>
-  <li>Jason Yoder</li>
-  <li>Josh Miller</li>
-  <li>Kareline Jones</li>
-  <li>Nolan Meyer</li>
-</ul>
+
+  - James Ramsey
+  - Jason Yoder
+  - Josh Miller
+  - Kareline Jones
+  - Nolan Meyer
 
 ## Client Partner Information
 ### Company:
 Cleam Stream Laundry Solutions
 ### People:
-<ul>
-  <li>Jake King</li>
-</ul>
+  - Jake King
 
 ## Links
-<ul>
-  <li>Project description</li>
-  <li>Team meeting moniutes</li>
-  <li>Mentor meeting minutes</li>
-  <li>Client partner meeting minutes</li>
-</ul>
+  - [Project description](https://github.com/JasonYoder2026/Clean-Stream/blob/main/ProjectDescription.md)
+  - [Team meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/Team)
+  - [Mentor meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/Mentor)
+  - [Client partner meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/ClientPartner)
 
 ## Code Repositories
-<ul>
-  <li>Mobile App - cross platform</li>
-  <li>Supabase backend</li>
-</ul>
+
+  - [Mobile App - cross platform](https://github.com/our-mobile-app)
+  - [Supabase backend](https://github.com/our-backend)
