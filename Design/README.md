@@ -5,7 +5,7 @@ All design folders will be explained here
 
 This file shows the intended software architecture we plan on following when building this project. 
 
-## [Business Requirements](BusinessRequirements.md)
+## [BusinessRequirements](BusinessRequirements.md)
 
 This file states the business requirement we are trying to meet for our client.
 
