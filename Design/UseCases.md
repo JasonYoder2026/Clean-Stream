@@ -20,7 +20,10 @@ Needs worked on
   - I think this is one of our use cases because our client wants there to be a loyalty card where the customer can add money to it so they can pay for a wash with their phone. Having this feature allows the customer to not have to worry about having enough money on their actual card or their card being locked because they have it in the app. This fits into our clients overall goal of making laundry mats more appealing to people who use technology as well as making it more convenient for customers
   - Actors: Customers
   - Flow:
-	  - 
+	  - Customer opens app
+	  - Selects the button to add money
+	  - Adds the desired amount of money
+	  - The money is transferred from their bank account to their clean stream wallet.
 - UC3 - Use NFC to start machines
   - Business Requirement: BR1
   - I think this is one of the use cases because our client want to get rid of the need for change and make payments digital. Before you can start a machine you need to pay, so using the NFC payment enables a machine to be "awakened" or started so using NFC to start machines is a use case.
