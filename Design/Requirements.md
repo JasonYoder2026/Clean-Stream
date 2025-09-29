@@ -11,7 +11,7 @@
 - FR4 User can initiate transaction using NFC
 	- UC3
 	- High Priority
-- FR5 User can find laundry mat locations on map
+- FR5 User can find laundromat locations on map
   	- UC4
   	- Medium Priority
  - FR6 User get notification when machine is done
@@ -26,6 +26,9 @@
  - FR9 Users can unlock doors after hours
    	- UC7
    	- Low Priority
+- FR10 Users can see the number of machines available at a location
+   	- UC1
+   	- Medium Priority
 # Non-Functional Requirements
  - NR1 the application should be available on mobile devices in the laundromat
    - UC1
@@ -45,15 +48,15 @@
  - NR6 the application should be able to operate on mobile devices when the user is away from the laundromat
    	- UC4
    	- Medium Priority
- - NR7 Program should be able to connect to locking system on bathroom door to lock and unlock after hours
+ - NR7 Program should be able to connect to locking system on front foor and bathroom door to lock and unlock after hours
 	- UC7
  	- Medium Priority 
 - NR8 App should use graphics such as jpegs, gifs, or color bars to indicate machine availability, display time remaining on a machine, and be used to help display transaction history
 	- UC1, UC2, UC3, UC5, UC6
 	- Medium Priority
 - NR9 The application should enforce secure password policies such as a minimum length, complexity, and optional 2FA.
-	-UC6
-	-High Priority
+	- UC6
+	- High Priority
 - NR10 The application should also be accessible on the web for users to upload money and check on their account.
 	- UC2, UC6
 	- High Priority
