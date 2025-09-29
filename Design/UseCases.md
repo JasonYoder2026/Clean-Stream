@@ -45,13 +45,13 @@ Needs worked on
     - Tapping on a location will display the number of washers and dryers available.
 - UC5 - Get notified when my cycle ends
   	- Business Requirment: BR1
-  	- this is a use case because it is one of the high level features that the client asked for. this will help the customers of the laundry mat get their clothes as soon as they are done which can save on time my making sure that people get their clothes making another machine open.
+  	- This is a use case because it is one of the high level features that the client asked for. This will help the customers of the laundry mat get their clothes as soon as they are done which can save on time my making sure that people get their clothes making another machine open.
   	- Actors: Customers
   	- Flow:
-  		- customer loads laundry into machine
-  	   	- machine washes laundry
-  	   	- machine notifies app that it is done
-  	   	- customer comes and gets laundry out
+  		- Customer loads laundry into machine
+  	   	- Machine washes laundry
+  	   	- Machine notifies app that it is done
+  	   	- Customer comes and gets laundry out
 - UC6 - Track transaction history
   - Business Requirement: BR1
   - I think this is one of the use cases because our client emphasized to us that we should be tracking transaction history.
