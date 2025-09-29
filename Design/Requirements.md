@@ -1,32 +1,29 @@
 # Functional Requirements
-- FR1 Users can see if machines are available
-	- UC1
-	- Medium Priority
-- FR2 User can create app account with email and password
+- FR1 User can create app account with email and password
 	- UC2
 	- High Priority
-- FR3 User can add money to loyalty card 
+- FR2 User can add money to loyalty card 
 	- UC2
 	- High Priority
-- FR4 User can check balance on loyalty card 
+- FR3 User can check balance on loyalty card 
 	- UC2
 	- High Priority
-- FR5 User can initiate transaction using NFC
+- FR4 User can initiate transaction using NFC
 	- UC3
 	- High Priority
-- FR6 User can find laundry mat locations on map
+- FR5 User can find laundry mat locations on map
   	- UC4
   	- Medium Priority
- - FR7 User get notification when machine is done
+ - FR6 User get notification when machine is done
    	- UC5
    	- High Priority
- - FR8 Users transaction history is tracked
+ - FR7 Users transaction history is tracked
    	- UC6
    	- Medium Priority
- - FR9 Users transaction history earn them rewards
+ - FR8 Users transaction history earn them rewards
    	- UC6
    	- High Priority
- - FR10 Users can unlock doors after hours
+ - FR9 Users can unlock doors after hours
    	- UC7
    	- Low Priority
 # Non-Functional Requirements
