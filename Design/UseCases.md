@@ -58,3 +58,12 @@ Needs worked on
     This data will mostly be used by the laundromat employees. The flow of this will be that when a transaction is made that
     the transaction data will be stored somewhere inside of our database. 
 - UC7 - Ability to unlock doors for afterhours use
+  - Business Requirement: BR1
+  - This is a use case because the client wanted the laundromat to be available after hours. To do this they want the doors to be unlockable by customers who have loaded their card with a set amount of money so they can do laundry and use the restrooms without the need for employees to be there. This helps save money on less staff while keeping the laundromat accessible longer.
+  - Actors: Customers
+  - Flow:
+    - Customer loads card with at least the set amount of money
+    - Customer can open the main doors to the laundromat with the same method used to open washing machines
+    - Doors autolock when closed.
+    - Customer can use machines and restroom
+    - When customer leaves the doors will remain locked.
