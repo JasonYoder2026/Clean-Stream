@@ -24,41 +24,39 @@
    	- UC6
    	- Medium Priority
  - FR9 Users transaction history earn them rewards
-   	-UC6
-   	-High Priority
+   	- UC6
+   	- High Priority
  - FR10 Users can unlock doors after hours
    	- UC7
    	- Low Priority
 # Non-Functional Requirements
- - NF1 the application should be available on mobile devices in the laundry mat
+ - NR1 the application should be available on mobile devices in the laundry mat
    - UC1
    - High Priority
- - NF2 the machine should be able to send and receive the applications data within 5 seconds
+ - NR2 the machine should be able to send and receive the applications data within 5 seconds
  	- UC1
  	- Low Priority
- - NF3 the application should be able to run with very little faliure
+ - NR3 the application should be able to run with very little faliure
  	- UC1
  	- High Priority
-- NF4 the application should protect loyalty card against unauthorized users
+ - NR4 the application should protect loyalty card against unauthorized users
 	- UC2
    	- High Priority
-- NF5 the application should be able to check loyalty card
+ - NR5 the application should be able to check loyalty card
     - UC2
     - High Priority
-- NF6 the NFC should be able to send and receive the applications data within 5 seconds
+ - NR6 the NFC should be able to send and receive the applications data within 5 seconds
   	- UC3
 	- High Priority
-- NF7 the application should be available on mobile devices when the user is away from the laundry mat
+ - NR7 the application should be available on mobile devices when the user is away from the laundry mat
    	- UC4
    	- Medium Priority
-- NF8 the machines should be able to easily communicate with the application
+ - NR8 the machines should be able to easily communicate with the application
    	- UC5
    	- High Priority
-- NF9 the application should be able to retreive transaction data within 5 seconds
+ - NR9 the application should be able to retreive transaction data within 5 seconds
  	- UC6
  	- Medium Priority
-- NF10 program should be able to connect to locking system on bathroom door to lock and unlock after hours
+ - NR10 program should be able to connect to locking system on bathroom door to lock and unlock after hours
 	- UC7
  	- Medium Priority 
-    - UC7
-    - Low Priority
