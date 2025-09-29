@@ -58,5 +58,7 @@
  	- UC6
  	- Medium Priority
 - NF10 program should be able to connect to locking system on bathroom door to lock and unlock after hours
+	- UC7
+ 	- Medium Priority 
     - UC7
     - Low Priority
