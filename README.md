@@ -22,7 +22,7 @@ Cleam Stream Laundry Solutions
   - [Team meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/Team)
   - [Mentor meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/Mentor)
   - [Client partner meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/ClientPartner)
-  - [Backlog/Proejct Management](https://github.com/users/JasonYoder2026/projects/1/views/1)
+  - [Backlog/Project Management](https://github.com/users/JasonYoder2026/projects/1/views/1)
     
 ## Code Repositories
 
