@@ -1,4 +1,3 @@
-Needs worked on
 # Actors
 - Customer
 	- People who want to use the laundromat
