@@ -30,33 +30,33 @@
    	- UC7
    	- Low Priority
 # Non-Functional Requirements
- - NR1 the application should be available on mobile devices in the laundry mat
+ - NR1 the application should be available on mobile devices in the laundromat
    - UC1
    - High Priority
- - NR2 the machine should be able to send and receive the applications data within 5 seconds
+ - NR2 the machine should be able to send and receive the application’s data within 5 seconds
  	- UC1
  	- Low Priority
- - NR3 the application should be able to run with very little faliure
+ - NR3 the application should be able to run with very little failure
  	- UC1
  	- High Priority
- - NR4 the application should protect loyalty card against unauthorized users
+ - NR4 the application should protect the loyalty card against unauthorized users
 	- UC2
    	- High Priority
- - NR5 the application should be able to check loyalty card
+ - NR5 the application should be able to check the balance on the loyalty card
     - UC2
     - High Priority
- - NR6 the NFC should be able to send and receive the applications data within 5 seconds
-  	- UC3
-	- High Priority
- - NR7 the application should be available on mobile devices when the user is away from the laundry mat
+ - NR6 the application should be able to operate on mobile devices when the user is away from the laundromat
    	- UC4
    	- Medium Priority
- - NR8 the machines should be able to easily communicate with the application
-   	- UC5
-   	- High Priority
- - NR9 the application should be able to retreive transaction data within 5 seconds
- 	- UC6
- 	- Medium Priority
- - NR10 program should be able to connect to locking system on bathroom door to lock and unlock after hours
+ - NR7 Program should be able to connect to locking system on bathroom door to lock and unlock after hours
 	- UC7
  	- Medium Priority 
+- NR8 App should use graphics such as jpegs, gifs, or color bars to indicate machine availability, display time remaining on a machine, and be used to help display transaction history
+	- UC1, UC2, UC3, UC5, UC6
+	- Medium Priority
+- NR9 The application should enforce secure password policies such as a minimum length, complexity, and optional 2FA.
+	-UC6
+	-High Priority
+- NR10 The application should also be accessible on the web for users to upload money and check on their account.
+	- UC2, UC6
+	- High Priority
