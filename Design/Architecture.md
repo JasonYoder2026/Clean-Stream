@@ -55,6 +55,11 @@ flowchart TD
 ## Modules
 ### Mobile App (Flutter/Dart)
 - User Interface (Flutter Widgets): Handles rendering of screens, navigation, and user interactions.
+
+### Web Interface (Flutter/Dart)
+- User Interface (Flutter Components): Handles rendering of screens, navigation, and user interactions.
+
+### Middleware
 - Business Logic (Dart Services): Encapsulates application rules, state management, validation, and coordinates data flow between UI and backend services.
 - API Client (Dio/HTTP): Manages network communication, sending requests and receiving responses from Supabase and the Nayax API.
 
