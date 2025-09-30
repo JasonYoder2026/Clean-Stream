@@ -2,10 +2,19 @@
 
 ```mermaid
 flowchart TD
+    %% Mobile app components
     subgraph MobileApp["Mobile App (Flutter/Dart)"]
         UI["User Interface<br>(Flutter Widgets)"]
+    end
+
+    %% Middleware components
+    subgraph Middleware["Middleware"]
         BL["Business Logic<br>(Dart Services)"]
         APIClient["API Client<br>(Dio/HTTP)"]
+    end
+
+    subgraph WebApp["Web Interface"]
+        WebUI["User Interface<br>(Flutter Components)"]
     end
 
     subgraph Backend["Supabase Backend"]
@@ -14,26 +23,32 @@ flowchart TD
         RPC["Edge Functions<br>(Serverless)"]
     end
 
+    %% Payment provider
     subgraph Payments["Nayax Payment API"]
         NayaxAPI["Nayax REST API<br>(Payments & Transactions)"]
     end
 
-    %% Mobile app internals
+    %% Mobile app flow
     UI -->|User actions & events| BL
-    BL -->|Data requests & responses| APIClient
 
-    %% Supabase interactions
+    %% Web app flow
+    WebUI -->|User actions & events| BL
+
+    %% Shared backend interactions
+    BL -->|Data requests & responses| APIClient
     APIClient -->|Login / Token exchange| Auth
     APIClient -->|"CRUD operations (SQL queries)"| DB
     APIClient -->|Trigger serverless logic| RPC
 
-    %% Nayax interaction
-    BL -->|Initiate payments / Get status| NayaxAPI
+    
 
-    %% Relationships inside Supabase
+    %% Payment interactions (both clients)
+    BL -->|Initiate payments / Get status| NayaxAPI
+    RPC -->|Secure payment validation| NayaxAPI
+
+    %% Supabase internal relationships
     Auth -->|Verify identity & permissions| DB
     RPC -->|Query & update data| DB
-    RPC -->|Secure payment validation| NayaxAPI
 
 ```
 
