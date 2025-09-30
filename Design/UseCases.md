@@ -7,7 +7,7 @@
 # Use Cases 
 - UC1- Check machine availability
   - Business Requirement: BR1
-  - I think this is one of our use cases because our client wants customers to be able to see if there are any machines available before they leave the house. When the customer opens the app they should be able to select a location and see how many machines are available at that location. This fits into our clients overall goal of making laundry mats more appealing to people who use technology as well as making it more convenient for customers.
+  - This is one of our use cases because our client wants customers to be able to see if there are any machines available before they leave the house. When the customer opens the app they should be able to select a location and see how many machines are available at that location. This fits into our clients overall goal of making laundry mats more appealing to people who use technology as well as making it more convenient for customers.
   - Actors: Customers
   - Flow:
 	  - Customer opens app
@@ -16,7 +16,7 @@
 	  - Customer is able to see available machines 
 - UC2 - Reload loyalty card
   - Business Requirement: BR1
-  - I think this is one of our use cases because our client wants there to be a loyalty card where the customer can add money to it so they can pay for a wash with their phone. Having this feature allows the customer to not have to worry about having enough money on their actual card or their card being locked because they have it in the app. This fits into our clients overall goal of making laundry mats more appealing to people who use technology as well as making it more convenient for customers
+  - This is one of our use cases because our client wants there to be a loyalty card where the customer can add money to it so they can pay for a wash with their phone. Having this feature allows the customer to not have to worry about having enough money on their actual card or their card being locked because they have it in the app. This fits into our clients overall goal of making laundry mats more appealing to people who use technology as well as making it more convenient for customers
   - Actors: Customers
   - Flow:
 	  - Customer opens app
@@ -25,7 +25,7 @@
 	  - The money is transferred from their bank account to their clean stream wallet.
 - UC3 - Use NFC to start machines
   - Business Requirement: BR1
-  - I think this is one of the use cases because our client want to get rid of the need for change and make payments digital. Before you can start a machine you need to pay, so using the NFC payment enables a machine to be "awakened" or started so using NFC to start machines is a use case.
+  - This is one of the use cases because our client want to get rid of the need for change and make payments digital. Before you can start a machine you need to pay, so using the NFC payment enables a machine to be "awakened" or started so using NFC to start machines is a use case.
   - Actors: customers
   - Flow:
     - Customer loads laundry into machine
@@ -53,7 +53,7 @@
   	   	- Customer comes and gets laundry out
 - UC6 - Track transaction history
   - Business Requirement: BR1
-  - I think this is one of the use cases because our client emphasized to us that we should be tracking transaction history.
+  - This is one of the use cases because our client emphasized to us that we should be tracking transaction history.
     This data will mostly be used by the laundromat employees. The flow of this will be that when a transaction is made that
     the transaction data will be stored somewhere inside of our database. 
 - UC7 - Ability to unlock doors for afterhours use
