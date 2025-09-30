@@ -29,6 +29,9 @@
 - FR10 Users can see the number of machines available at a location
    	- UC1
    	- Medium Priority
+- FR11 The application and website should be able to switch between a light mode and a dark mode
+ 	- No use case, client requested.
+  	- Medium-Low Priority 
 # Non-Functional Requirements
  - NR1 the application should be available on mobile devices in the laundromat
    - UC1
@@ -60,3 +63,4 @@
 - NR10 The application should also be accessible on the web for users to upload money and check on their account.
 	- UC2, UC6
 	- High Priority
+
