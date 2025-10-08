@@ -26,5 +26,5 @@ Cleam Stream Laundry Solutions
     
 ## Code Repositories
 
-  - [Mobile App - cross platform](https://github.com/our-mobile-app)
+  - [Mobile App - cross platform](https://github.com/jamaki604/CleanStreamLaundryApp)
   - [Supabase backend](https://github.com/our-backend)
