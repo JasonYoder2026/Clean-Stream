@@ -23,8 +23,7 @@ Cleam Stream Laundry Solutions
   - [Mentor meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/Mentor)
   - [Client partner meeting minutes](https://github.com/JasonYoder2026/Clean-Stream/tree/main/MeetingMinutes/ClientPartner)
   - [Backlog/Project Management](https://github.com/users/JasonYoder2026/projects/1/views/1)
-    
+  - [Documentation](Documentation/)
 ## Code Repositories
 
-  - [Mobile App - cross platform](https://github.com/jamaki604/CleanStreamLaundryApp)
-  - [Supabase backend](https://github.com/our-backend)
+  - [Xlean Stream Mobile App](https://github.com/jamaki604/CleanStreamLaundryApp)
