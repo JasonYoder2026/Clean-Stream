@@ -6,7 +6,14 @@ We are using multiple different technologies to make this happen. We are using [
 
 ## Install Prerequisites
 
-* We recommended installing [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gad_campaignid=21831783525&gbraid=0AAAAAC-IOZkwrUYtBbUxwVwTQTcwtHKqh&gclid=CjwKCAjw3tzHBhBREiwAlMJoUlUqWZvUnSc3QmXnzmvaXCqed31h13VPWRSIrh4R3v5epIR4NE2qcxoCW-8QAvD_BwE) for development of this project.
+* We recommended installing [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gad_campaignid=21831783525&gbraid=0AAAAAC-IOZkwrUYtBbUxwVwTQTcwtHKqh&gclid=CjwKCAjw3tzHBhBREiwAlMJoUlUqWZvUnSc3QmXnzmvaXCqed31h13VPWRSIrh4R3v5epIR4NE2qcxoCW-8QAvD_BwE) for development of this project, as it is easy to use phone emulators with. You can also use [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) as Android Studio is a fork of it, but are limited to browser testing.
+  * In either Android Studio or IntelliJ IDEA, whichever you choose:
+    * Navigate to File -> Settings
+    * Go to the Plugins tab
+    * Search for and install these plugins
+      * Flutter
+      * Dart
+    * Restart your IDE for these to take affect
 * We also recommend downloading [GitHub Desktop](https://desktop.github.com/download/).
 
 ## Clone Project
@@ -20,7 +27,7 @@ Once you get into GitHub desktop you will click clone repository to clone it.
 ## Flutter Installation
 
 ### Mac
-To install flutter on Mac you will need to use Homebrew. To install Homebrew place this into your terminal:
+To install Flutter on Mac you will need to use Homebrew. To install Homebrew place this into your terminal:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -32,7 +39,25 @@ brew install --cask flutter
 ```
 
 ### Windows
-
+To install Flutter on Windows:
+- Download the zip file [here](https://docs.flutter.dev/install/manual)
+- Unzip the folder
+- Move it to a directory that doesn't require administrative privlege to access (C:\Flutter works great), remember this directory!
+- Add Flutter to your System PATH variable
+  - Press the Windows key
+  - Search "env"
+  - Click "Edit the system envionment variables"
+  - Click Environment Variables
+  - <img width="557" height="581" alt="image" src="https://github.com/user-attachments/assets/322cd929-0207-4a6e-a403-49e321575c55" />
+  - Click Path in the System variables screen
+  - Click Edit...
+  - <img width="708" height="780" alt="image" src="https://github.com/user-attachments/assets/fdfb621a-1ceb-4694-bbbb-f6f99473634b" />
+  - Click New
+  - Paste the path that leads to your Flutter file (C:\YOUR_LOCATION\Flutter\bin)
+  - Verify the path is updated
+  - <img width="590" height="657" alt="image" src="https://github.com/user-attachments/assets/d571ab7c-e2be-4e03-a6fe-06dfe432dfae" />
+  - Click Ok three (3) times
+  - Restart your computer to make sure the PATH variable gets updated
 
 ### Get Dependencies 
 The first step will be to open this project in Andriod Studio, This project uses multiple different dart/flutter packages. Flutter has a very easy package manager system. In the terminal of Andriod studio run the command: 
@@ -59,7 +84,7 @@ Inside of the root of the project structure you will need to create a .env file.
 SUPABASE_URL= "Supabase URL goes here"
 ANON_KEY="ANON Key goes here"
 ```
-
+Contact Jake King for the URL and ANON KEY - motokingjr@sbcglobal.net
 ## Folder structure
 Our current folder structure looks like this:
 
@@ -86,9 +111,28 @@ This is where all of our UI pages reside.
 ### Testing
 This folder will have the exact same structure as inside of our lib folder. Only difference is that this directory will be where all of our tests reside. 
 
+## Running the Project
 
-
-
+- You can use either a browser or phone emulator to run and test the code
+- To use a browser:
+  - Select a web browser from the dropdown to run the code on
+  - Run main.dart
+  <img width="827" height="303" alt="image" src="https://github.com/user-attachments/assets/e7f9784a-6c36-4a9c-a164-1b984d02462f" />
+- To use a phone emulator you need to use Android Studio
+  - On the right open Device Manager
+<img width="783" height="673" alt="image" src="https://github.com/user-attachments/assets/a9558d6b-d2aa-469c-b4c0-916b5b4f18d1" />
+  - Click Add a new Device
+    <img width="447" height="837" alt="image" src="https://github.com/user-attachments/assets/6218ee11-f325-456e-a88b-f6e63b0df935" />
+  - Select Create Virtual Device
+  - Choose a device, Pixel 6 Pro is an average size screen so it's great for testing
+  - Click Next
+  - Name the device if you want
+  - Choose a System Image (you'll probably have to download it)
+    - Recommended to pick a version of Android 12 to make sure the app is compatible with some older versions
+  - Once it is downloaded click Finish
+  - Select the new device in the Device Manager and click Start
+  - Once it is booted you will see it as an option for the run source at the top of the screen
+  - Select the device from the dropdown and run main.dart
 
 
 
