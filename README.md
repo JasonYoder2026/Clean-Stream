@@ -26,4 +26,4 @@ Cleam Stream Laundry Solutions
   - [Documentation](Documentation/)
 ## Code Repositories
 
-  - [Xlean Stream Mobile App](https://github.com/jamaki604/CleanStreamLaundryApp)
+  - [Clean Stream Mobile App](https://github.com/jamaki604/CleanStreamLaundryApp)
