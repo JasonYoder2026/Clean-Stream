@@ -116,13 +116,13 @@ This folder will have the exact same structure as inside of our lib folder. Only
 - You can use either a browser or phone emulator to run and test the code
 - To use a browser:
   - Select a web browser from the dropdown to run the code on
-  - Run main.dart
-  <img width="827" height="303" alt="image" src="https://github.com/user-attachments/assets/e7f9784a-6c36-4a9c-a164-1b984d02462f" />
+  - Run main.dart<br>
+  <img width="827" height="303" alt="image" src="https://github.com/user-attachments/assets/e7f9784a-6c36-4a9c-a164-1b984d02462f" /><br>
 - To use a phone emulator you need to use Android Studio
   - On the right open Device Manager
-<img width="783" height="673" alt="image" src="https://github.com/user-attachments/assets/a9558d6b-d2aa-469c-b4c0-916b5b4f18d1" />
+  - <img width="783" height="673" alt="image" src="https://github.com/user-attachments/assets/a9558d6b-d2aa-469c-b4c0-916b5b4f18d1" />
   - Click Add a new Device
-    <img width="447" height="837" alt="image" src="https://github.com/user-attachments/assets/6218ee11-f325-456e-a88b-f6e63b0df935" />
+  - <img width="447" height="837" alt="image" src="https://github.com/user-attachments/assets/6218ee11-f325-456e-a88b-f6e63b0df935" />
   - Select Create Virtual Device
   - Choose a device, Pixel 6 Pro is an average size screen so it's great for testing
   - Click Next
