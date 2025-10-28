@@ -115,6 +115,10 @@ This folder will have the exact same structure as inside of our lib folder. Only
 
 - You can use either a browser or phone emulator to run and test the code
 - To use a browser:
+  - Click the three lines next to the run button
+  - Click "Edit"
+  - In the "Additional run args:" field enter "--web-port=8080"
+  - Click "Ok"
   - Select a web browser from the dropdown to run the code on
   - Run main.dart<br>
   <img width="827" height="303" alt="image" src="https://github.com/user-attachments/assets/e7f9784a-6c36-4a9c-a164-1b984d02462f" /><br>
