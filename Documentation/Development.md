@@ -140,8 +140,27 @@ This folder will have the exact same structure as inside of our lib folder. Only
   - Once it is booted you will see it as an option for the run source at the top of the screen
   - Select the device from the dropdown and run main.dart
 
+# Replicating via Docker
 
+## Install prerequisites
+- Download and install Docker Desktop
+  - https://www.docker.com/products/docker-desktop/
+  - Instructions for specific OSs are below
+    - Windows: https://docs.docker.com/desktop/setup/install/windows-install/
+    - MacOS: https://docs.docker.com/desktop/setup/install/mac-install/
+    - Linux: https://docs.docker.com/desktop/setup/install/linux/
+- After running the executable and installing, start Docker
+## Clone the repository
+- Clone the Clean Stream Laundry repository
+  - ``` git clone https://github.com/jamaki604/CleanStreamLaundryApp.git ```
 
+## Run
+- From the root of the repository run:
+  - ``` docker compose up --build ```
+- Note: the initial build can take some time
+- If you get prompted for networks accessing the app, allow it
+- Navigate to localhost:8080 in a browser, there you will see the webapp
+- Note: Only the webapp can be ran using Docker, as emulators require virtualization to run
 
 
 
