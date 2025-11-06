@@ -31,7 +31,10 @@
    	- Medium Priority
 - FR11 The application and website should be able to switch between a light mode and a dark mode
  	- No use case, client requested.
-  	- Medium-Low Priority 
+  	- Medium-Low Priority
+- FR12 User should be able to request refund on transactions.
+  	- No use case, client requested.
+  	- Medium Priority
 # Non-Functional Requirements
  - NR1 the application should be available on mobile devices in the laundromat
    - UC1
