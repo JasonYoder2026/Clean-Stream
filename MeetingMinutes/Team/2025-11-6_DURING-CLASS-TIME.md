@@ -10,7 +10,7 @@
 
 ## Location/Medium
 
-Discord
+Bracken Library
 
 ## Present
 - Jason Yoder
