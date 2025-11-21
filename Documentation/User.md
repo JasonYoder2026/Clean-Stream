@@ -1,4 +1,4 @@
-# Log In
+# Login
 
 When you open the app, you’ll be prompted with the **Log In** screen.  
 Here, you can enter your **username** and **password**, then tap **Log In** to access your account.  
@@ -15,14 +15,31 @@ Enter the required information, then tap **Sign Up** to create your account and 
 
 ---
 
+# Home Page
+
+After logging in, you’ll be directed to the home page.  
+Here you will see the number of availabile machines at a location.<br>
+<img width="408" height="875" alt="image" src="https://github.com/user-attachments/assets/8cce1ddc-04f9-4782-abd4-5f25dd42ba90" />
+
+
+You can switch between locations with the drop down menu.<br>
+<img width="402" height="876" alt="image" src="https://github.com/user-attachments/assets/6e1f2dff-a4c9-4036-877f-bfba7eaef426" />
+
+---
+
+# Start Page
+
+Pressing the Start button on the bottom bar will bring you here.
+
+To tap to pay, simply hold your phone next to the NFC device on the machine.
+
+Tap **Scan QR code** to activate your camera and scan a QR code on a machine.<br>
+<img width="413" height="880" alt="image" src="https://github.com/user-attachments/assets/1a035468-bc5f-483b-adfb-546473b913d0" />
+
+---
+
 # QR Scanner
-
-After logging in, you’ll be directed to the main screen.  
-Tap **Start Scanning** to activate your camera and scan a QR code.<br>
-<img width="407" height="873" alt="image" src="https://github.com/user-attachments/assets/e0874791-d596-4bc6-a13b-4ebda373dbe3" />
-
-
-Once you tap **Start Scanning**, align the QR code within the on-screen frame for accurate detection.<br>
+Once you tap **Scan QR code**, align the QR code within the on-screen frame for accurate detection.<br>
 <img width="401" height="875" alt="image" src="https://github.com/user-attachments/assets/f1a56efb-3711-43a8-9a98-72625abf11dc" />
 
 
@@ -32,8 +49,10 @@ After scanning a machine QR code, it will take you to it's payment page.<br>
 ---
 # Loyalty Card
 
-The loyalty card offers a prepaid feature so you only have to process larger transactions and don't have to worry about a transaction every time you use our machines.<br>
-<img width="412" height="886" alt="image" src="https://github.com/user-attachments/assets/ac196b4c-db4b-42dc-a963-670ddf8f8f93" />
+Pressing the wallat button on the bottom bar will bring you to the loyalty card menu.
+The loyalty card offers a prepaid feature so you only have to process larger transactions and don't have to worry about a transaction every time you use our machines.
+You can also view your recent transactions on this page at the bottom.<br>
+<img width="415" height="873" alt="image" src="https://github.com/user-attachments/assets/3d43cd47-a584-452f-b675-0a597d9577d1" />
 
 By clicking "Load Card", you are prompted the amount you would like to load.<br>
 <img width="415" height="883" alt="image" src="https://github.com/user-attachments/assets/2402503b-0cb5-46b2-94eb-4460229ef7ac" />
@@ -58,6 +77,27 @@ After successful payment, a message will show that the machine is ready to start
 
 # Settings Page 
 
-By clicking the settings button in the bottom navbar this is where you will be able to sign out. <br>
-<img width="493" height="838" alt="Screenshot 2025-10-21 at 4 54 22 PM" src="https://github.com/user-attachments/assets/81ba1adc-6c7e-42f0-97d8-7812074d6072" />
+Pressing the settings button in the bottom bar will bring you to settings. <br>
+<img width="415" height="878" alt="image" src="https://github.com/user-attachments/assets/13f7130d-9924-486e-ba6f-fcbb0bf77418" />
+Here you can switch between light and dark mode, view your transaction statements, and request a refund.
+
+---
+
+# Transaction Statement
+
+Pressing the Monthly Report button in settings will bring you here.
+This page displays your financial activity by month for the last year.
+<img width="416" height="880" alt="image" src="https://github.com/user-attachments/assets/96c10ad9-c518-469e-bb07-233fe650022a" />
+
+# Refund
+
+Pressing the Request Refund button in settings will bring you here.
+This page is a form that allows you to request a refund in case a machine malfunctioned or something alike.
+Upon submitting a refund request, an admin will be notified and your request be reviewed. You will get an email from our admin when progress is made on your request.
+<br>
+<img width="425" height="886" alt="image" src="https://github.com/user-attachments/assets/1a918891-ddf8-4177-8ae6-06ccc1bbfd63" />
+
+
+
+
 
