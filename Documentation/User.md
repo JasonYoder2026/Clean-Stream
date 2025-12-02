@@ -78,7 +78,7 @@ After successful payment, a message will show that the machine is ready to start
 # Settings Page 
 
 Pressing the settings button in the bottom bar will bring you to settings. <br>
-<img width="415" height="878" alt="image" src="https://github.com/user-attachments/assets/13f7130d-9924-486e-ba6f-fcbb0bf77418" />
+<img width="415" height="878" alt="image" src="https://github.com/user-attachments/assets/13f7130d-9924-486e-ba6f-fcbb0bf77418" /><br>
 Here you can switch between light and dark mode, view your transaction statements, and request a refund.
 
 ---
