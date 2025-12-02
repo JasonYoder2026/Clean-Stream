@@ -83,18 +83,20 @@ Inside of the root of the project structure you will need to create a .env file.
 ```
 SUPABASE_URL= "Supabase URL goes here"
 ANON_KEY="ANON Key goes here"
+STRIPE_PUBLISHABLE_KEY="Stripe public key goes here"
 ```
-Contact Jake King for the URL and ANON KEY - motokingjr@sbcglobal.net
+Contact Jake King for the URL, ANON KEY and Stripe publishable key - motokingjr@sbcglobal.net
 ## Folder structure
 Our current folder structure looks like this:
 
 
-<img width="911" height="711" alt="Screenshot 2025-10-21 at 2 41 57 PM" src="https://github.com/user-attachments/assets/73deec8e-1a55-4432-b2c6-3be93949ef3c" />
+<img width="455" height="688" alt="image" src="https://github.com/user-attachments/assets/632417ac-dece-4151-a7d5-bce5c2a6be73" />
+
 
 All of our src code will go inside of the lib folder.
 
-### Components
-This is where all of our UI componets are housed
+### Widgets
+This is where all of our UI reusable widgets are housed
 
 ### Logic 
 This is where all of our back end logic resides. Each subfolder is a specific feature that has been developed.
