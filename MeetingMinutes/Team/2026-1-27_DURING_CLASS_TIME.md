@@ -23,6 +23,14 @@ Discord
 Jason Yoder
 
 ## Things Clarified
-
+- Progress updates:
+  - Josh: working on notification sending preeferences
+  - Kareline: finished reset password feature, under review
+  - James: done with map page, finishing tests, putting up PR later today
+  - Jason: finished edit profile page, UI might need to be reworked but feature is done
+  - Nolan: Working on increasing test coverage
   
 ## Progress Made
+- Worked on increasing test coverage as a group
+- Worked on debugging reset password
+- Worked on UI design for homepage with the map
