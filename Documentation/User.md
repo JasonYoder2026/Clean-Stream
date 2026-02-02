@@ -3,7 +3,9 @@
 When you open the app, you’ll be prompted with the **Log In** screen.  
 Here, you can enter your **username** and **password**, then tap **Log In** to access your account.  
 If you don’t have an account yet, tap **Create an Account** to register.<br>
+You can also click the sign in with apple/google button to create an account that way as well.<br>
 <img width="499" height="799" alt="Screenshot 2026-02-01 at 7 51 12 PM" src="https://github.com/user-attachments/assets/f66eecde-a0da-405a-adc7-6eaf8fe53e94" /><br>
+
 
 
 ---
