@@ -111,9 +111,11 @@ Upon submitting a refund request, an admin will be notified and your request be 
 
 This page allows you to edit your profile such as changing your email. 
 It will fill in the box with your current into then you can change it. Click save changes, 
-and it will send you an email for verification
+and it will send you an email for verification.
+<br>
+<img width="382" height="836" alt="image" src="https://github.com/user-attachments/assets/480e148e-48f9-4856-89fa-d1de86335daa" />
 
-<img width="498" height="801" alt="Screenshot 2026-02-01 at 7 55 37 PM" src="https://github.com/user-attachments/assets/97050bb8-135f-4dd9-be8f-370d23683c9b" />
+
 
 
 
