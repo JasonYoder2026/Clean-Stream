@@ -115,6 +115,14 @@ and it will send you an email for verification.
 <br>
 <img width="382" height="836" alt="image" src="https://github.com/user-attachments/assets/480e148e-48f9-4856-89fa-d1de86335daa" />
 
+# Notifications
+When you first go to pay for a machine you will be prompted for notifications. This is how we will notify the user once
+their machine is done. Once you pay for a machine notifcations will be setup then you will see something like this when 
+your machine is done:
+
+<img width="382" height="836" alt="IMG_5591" src="https://github.com/user-attachments/assets/a737b285-ab5a-4589-9b1c-fb63ba108244" />
+
+
 
 
 
