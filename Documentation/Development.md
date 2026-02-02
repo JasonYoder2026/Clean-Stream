@@ -15,6 +15,7 @@ We are using multiple different technologies to make this happen. We are using [
       * Dart
     * Restart your IDE for these to take affect
 * We also recommend downloading [GitHub Desktop](https://desktop.github.com/download/).
+* All of our depedencies and their versions are managed in our pubspec.yaml file.
 
 ## Clone Project
 First step is going to be to go to the [repository](https://github.com/jamaki604/CleanStreamLaundryApp/tree/AutoLogIn) on GitHub. Once you get there you'll click on code then open with GitHub desktop.
@@ -90,7 +91,7 @@ Contact Jake King for the URL, ANON KEY and Stripe publishable key - motokingjr@
 Our current folder structure looks like this:
 
 
-<img width="455" height="688" alt="image" src="https://github.com/user-attachments/assets/632417ac-dece-4151-a7d5-bce5c2a6be73" />
+<img width="359" height="474" alt="Screenshot 2026-02-02 at 4 01 13 PM" src="https://github.com/user-attachments/assets/c80a2005-e231-4bbe-ac7a-6256fa71e2a3" />
 
 
 All of our src code will go inside of the lib folder.
@@ -99,16 +100,16 @@ All of our src code will go inside of the lib folder.
 This is where all of our UI reusable widgets are housed
 
 ### Logic 
-This is where all of our back end logic resides. Each subfolder is a specific feature that has been developed.
-
-* Authentication: All authentication logic
-* QrScanner: All the logic for our qr scanner.
+This is where our back end logic resides. Each subfolder is a specific feature that has been developed. In our services sub folder is where all of our interfaces reside.
 
 ### Middleware
 This is where all of the controllers that UI uses to communicate with our backend reside. 
 
 ### Pages
 This is where all of our UI pages reside.
+
+### Services
+This is the folder where all of our implementations of our interfaces reside.
 
 ### Testing
 This folder will have the exact same structure as inside of our lib folder. Only difference is that this directory will be where all of our tests reside. 
