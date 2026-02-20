@@ -71,7 +71,7 @@ This will install all of the dependencies.
 ### Test
 Once you have completed these steps you can run the command:
 ```
-flutter test
+flutter test --coverage
 ```
 You should see a result that looks something like this: 
 <img width="632" height="240" alt="Screenshot 2025-10-21 at 2 29 12 PM" src="https://github.com/user-attachments/assets/ad2cadf7-5998-4a91-a628-d701c2d01ae2" />
