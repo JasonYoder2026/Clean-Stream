@@ -16,6 +16,11 @@ We are using multiple different technologies to make this happen. We are using [
     * Restart your IDE for these to take affect
 * We also recommend downloading [GitHub Desktop](https://desktop.github.com/download/).
 * All of our depedencies and their versions are managed in our pubspec.yaml file.
+* Docker is needed to run the Supabase CLI, download it [here](https://www.docker.com/products/docker-desktop/).
+* Node Package Manager is needed to install the Supabase CLI. Instructions to download [here](https://nodejs.org/en/download).
+* Install Deno (this is the service that is used to serve the functions).
+  * For Windows, run ```irm https://deno.land/install.ps1 | iex``` in PowerShell
+  * For MacOS, run ```brew install deno```
 
 ## Clone Project
 First step is going to be to go to the [repository](https://github.com/jamaki604/CleanStreamLaundryApp/tree/AutoLogIn) on GitHub. Once you get there you'll click on code then open with GitHub desktop.
@@ -76,6 +81,19 @@ flutter test --coverage
 You should see a result that looks something like this: 
 <img width="632" height="240" alt="Screenshot 2025-10-21 at 2 29 12 PM" src="https://github.com/user-attachments/assets/ad2cadf7-5998-4a91-a628-d701c2d01ae2" />
 
+### Syncing Supabase Functions 
+__Any time you clone the repo (first or hundredth) you need to follow these steps!__ <br>
+In order to do anything with the Supabase functions, have Docker running and be signed into the Supabase account on a browser. Contact Jake King for the login information - motokingjr@sbcglobal.net.
+- From the root of the project run ```npm install```
+- Run ```npx supabase login```
+- Login with the authentication code
+- Run ```npx supabase link --project-ref <PROJECT_ID_HERE>```
+- Make sure your functions are up-to-date with ```npm run supabase:update-functions```
+
+### Deploying/updating Supabase Edge Functions
+Before making changes, ensure your functions are up to date with ```npm run supabase:update-functions```. <br>
+To deploy changes you've made, run ```npx supabase functions deploy <FUNCTION_NAME>```.
+
 ## Important Files
 
 ### Environment file
@@ -94,25 +112,32 @@ Our current folder structure looks like this:
 <img width="359" height="474" alt="Screenshot 2026-02-02 at 4 01 13 PM" src="https://github.com/user-attachments/assets/c80a2005-e231-4bbe-ac7a-6256fa71e2a3" />
 
 
-All of our src code will go inside of the lib folder.
+### Our frontend code is inside the lib/ directory.
 
-### Widgets
+#### Widgets
 This is where all of our UI reusable widgets are housed
 
-### Logic 
+#### Logic 
 This is where our back end logic resides. Each subfolder is a specific feature that has been developed. In our services sub folder is where all of our interfaces reside.
 
-### Middleware
+#### Middleware
 This is where all of the controllers that UI uses to communicate with our backend reside. 
 
-### Pages
+#### Pages
 This is where all of our UI pages reside.
 
-### Services
+#### Services
 This is the folder where all of our implementations of our interfaces reside.
 
-### Testing
+#### Testing
 This folder will have the exact same structure as inside of our lib folder. Only difference is that this directory will be where all of our tests reside. 
+
+### Our backend functions are inside the supabase/ directory.
+
+Each function gets its own folder. Each function has an index.ts (the serve() part) and a logic.ts (the logic behind the function). Additionally, all logic in a function is tested in a logic.test.ts file.
+<br>
+<img width="212" height="442" alt="image" src="https://github.com/user-attachments/assets/127cd4e2-ce1e-4d8c-b732-4e973daf9e07" />
+<br>
 
 ## Running the Project
 
@@ -142,6 +167,17 @@ This folder will have the exact same structure as inside of our lib folder. Only
   - Select the new device in the Device Manager and click Start
   - Once it is booted you will see it as an option for the run source at the top of the screen
   - Select the device from the dropdown and run main.dart
+ 
+## Testing the Project
+
+### Frontend
+To test the client code, from the root of the project run ```flutter test --coverage```
+
+### Backend Functions
+To run the Supabase tests run ```npm run test:coverage``` from the project root.
+Coverage will show in the CLI, but you can serve the index.html in coverage_deno/html/index.html with something like Live Server for a visual representation.
+
+To run an individual test, you can run ```deno test --reload supabase/functions/<FUNCTION_NAME>```.
 
 # Replicating via Docker
 
