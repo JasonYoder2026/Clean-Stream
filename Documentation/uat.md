@@ -11,6 +11,16 @@
 |Making Payments|High|1|Yes|
 |Scanning Machine QR Codes|High|1|Yes|
 |Loyalty Card|High|2|Yes|
+|Machine Availability|High|2|Yes|
+|Account Creation|High|2|Yes|
+|Notifications for Laundry Finishing|High|3|Yes|
+|Unlock doors after hours|High|4|Yes|
+|Monthly Report|Medium|2|Yes|
+|Request Refund|Medium|2|Yes|
+|Find Locations on a Map|Medium|3|Yes|
+|Light & Dark mode|Low|2|Yes|
+|Account Management|Low|3|Yes|
+|Loyalty Rewards|Low|4|Yes|
 
 ---
 
