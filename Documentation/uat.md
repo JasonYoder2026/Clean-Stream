@@ -47,7 +47,7 @@ Users should be able to make payments to the loyalty card and individual machine
 
 **Then:** The user sees a popup with the error message and no transaction occurs
 
-**Status:** Tested
+**Status:** Client accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/59)
 
@@ -76,7 +76,7 @@ User should be able to scan the machine QR code and be taken to the machines pay
 
 **Then:** The user sees a popup with the error message and no transaction occurs
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/59)
 
@@ -93,7 +93,7 @@ Users should be able to manage and use a digital loyalty card.
 
 **Then:** They can make a payment and add money to their loyalty card balance
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/10)
 
@@ -103,7 +103,7 @@ Users should be able to manage and use a digital loyalty card.
 
 **Then:** They can see their loyalty card balance
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/10)
 
@@ -114,7 +114,7 @@ Users should be able to manage and use a digital loyalty card.
 
 **Then:** A popup is show describing the error and saying no transaction occurred.
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/10)
 
@@ -124,6 +124,8 @@ Users should be able to manage and use a digital loyalty card.
 **When:** The user makes a payment using the loyalty card
 
 **Then:** The transaction succeeds and the balance becomes $0.00
+
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/10)
 
@@ -139,7 +141,7 @@ Users should be able to view machine availability.
 
 **Then:** The user sees the machine availability for that location
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/56)
 
@@ -150,7 +152,7 @@ Users should be able to view machine availability.
 
 **Then:** The app doesn't load
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/56)
 
@@ -161,7 +163,7 @@ Users should be able to view machine availability.
 
 **Then:** The user sees no machines are available at that location
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/56)
 
@@ -177,7 +179,7 @@ Users should be able to create an account.
 
 **Then:** They can verify their email and login
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/94)
 
@@ -188,7 +190,7 @@ Users should be able to create an account.
 
 **Then:** They see red text explaining which fields are filled out wrong
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/94)
 
@@ -199,7 +201,7 @@ Users should be able to create an account.
 
 **Then:** The account is created successfully without truncation or system error
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/94)
 
@@ -215,7 +217,7 @@ Users should receive notifications when laundry is finished.
 
 **Then:** The user gets a notification some minutes before the machine ends according to their user preference
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/84)
 
@@ -226,7 +228,7 @@ Users should receive notifications when laundry is finished.
 
 **Then:** The user still receives the notification
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/84)
 
@@ -237,7 +239,7 @@ Users should receive notifications when laundry is finished.
 
 **Then:** The user receives the notification exactly when the cycle ends
 
-**Status:** Tested
+**Status:** Client Accepted
 
 **Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/84)
 
@@ -285,37 +287,37 @@ Authorized users should be able to unlock doors after hours.
 Users should be able to view a monthly report.
 
 ### Scenario 1: Happy Path
-**Given:** 
+**Given:** A user is logged in and has an account with transactions from a previous month
 
-**When:** 
+**When:** They navigate to the monthly report page
 
-**Then:** 
+**Then:** They will see a list of spendings separated by category.
 
-**Status:** 
+**Status:** Client Accepted
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/73)
 
 ### Scenario 2: Error Handling
-**Given:** 
+**Given:** A user is logged in
 
-**When:** 
+**When:** They navigate to the monthly report page and the system fails to load data
 
-**Then:** 
+**Then:** The user will see a nicely handled error message
 
-**Status:** 
+**Status:** Not Implemented
 
-**Evidence:** 
+**Evidence:** N/A
 
 ### Scenario 3: Edge Case
-**Given:** 
+**Given:** A user is logged in and has no previous transactions
 
-**When:** 
+**When:** They navigate to the monthly report page
 
-**Then:** 
+**Then:** The will see a message saying no previous transactions
 
-**Status:** 
+**Status:** Not implemented
 
-**Evidence:** 
+**Evidence:** N/A
 
 ---
 
@@ -323,37 +325,37 @@ Users should be able to view a monthly report.
 Users should be able to request a refund.
 
 ### Scenario 1: Happy Path
-**Given:** 
+**Given:** A user is logged in and has previous transactions
 
-**When:** 
+**When:** They navigate to the refund page and select a transaction, type a reason, and click submit
 
-**Then:** 
+**Then:** The system starts the refund process and an admin recieves an email
 
-**Status:** 
+**Status:** Client Accepted
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/74)
 
 ### Scenario 2: Error Handling
-**Given:** 
+**Given:** A user is logged in and has previous transactions
 
-**When:** 
+**When:** They navigate to the refund page and select a transaction, type a reason, and click submit and the system fails
 
-**Then:** 
+**Then:** They receive an error message explaining what went wrong
 
-**Status:** 
+**Status:** Client Accepted
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/74)
 
 ### Scenario 3: Edge Case
-**Given:** 
+**Given:** A user is logged in and does not have previous transactions
 
-**When:** 
+**When:** They navigate to the refund page, there are no transactions to choose from
 
-**Then:** 
+**Then:** They are not able to submit the empty form
 
-**Status:** 
+**Status:** Client Accepted
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/74)
 
 ---
 
@@ -361,37 +363,37 @@ Users should be able to request a refund.
 Users should be able to find store locations on a map.
 
 ### Scenario 1: Happy Path
-**Given:** 
+**Given:** A user is logged in and on the home screen  
 
-**When:** 
+**When:** They select a location from the dropdown menu
 
-**Then:** 
+**Then:** The map autofocuses on a location
 
-**Status:** 
+**Status:** Client Accepted
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/81)
 
 ### Scenario 2: Error Handling
-**Given:** 
+**Given:** A user is logged in and on the home screen
 
-**When:** 
+**When:** The system fails to fetch location information
 
-**Then:** 
+**Then:** The user receives an error message explaining what went wrong
 
-**Status:** 
+**Status:** Internal Tested
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/81)
 
 ### Scenario 3: Edge Case
-**Given:** 
+**Given:** A user is logged in and on the home screen
 
-**When:** 
+**When:** The user taps on the icon on the map
 
-**Then:** 
+**Then:** The dropdown selects the location
 
-**Status:** 
+**Status:** Not Implemented
 
-**Evidence:** 
+**Evidence:** N/A
 
 ---
 
@@ -399,15 +401,15 @@ Users should be able to find store locations on a map.
 Users should be able to switch between light and dark mode.
 
 ### Scenario 1: Happy Path
-**Given:** 
+**Given:** A user is logged in and on the settings page
 
-**When:** 
+**When:** They tap the light/dark mode button
 
-**Then:** 
+**Then:** The app toggles from one theme mode to the other
 
-**Status:** 
+**Status:** Client Accepted
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/57)
 
 ### Scenario 2: Error Handling
 **Given:** 
@@ -437,37 +439,37 @@ Users should be able to switch between light and dark mode.
 Users should be able to manage their account settings.
 
 ### Scenario 1: Happy Path
-**Given:** 
+**Given:** A user is logged in and on the settings page
 
-**When:** 
+**When:** They navigate to edit account
 
-**Then:** 
+**Then:** They can update their display name and email or delete their account
 
-**Status:** 
+**Status:** Internal tested
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/91)
 
 ### Scenario 2: Error Handling
-**Given:** 
+**Given:** A user is logged in and on the edit profile page
 
-**When:** 
+**When:** They try to edit profile information and the network/system fails
 
-**Then:** 
+**Then:** They receive a popup error message explaining it failed
 
-**Status:** 
+**Status:** Internal tested
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/91)
 
 ### Scenario 3: Edge Case
-**Given:** 
+**Given:** A user is logged in and on the edit profile page
 
-**When:** 
+**When:** They try to edit profile information with invalid input
 
-**Then:** 
+**Then:** They will get a popup error message and the system will not try to change their info
 
-**Status:** 
+**Status:** Internal Tested
 
-**Evidence:** 
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/91)
 
 ---
 
@@ -475,37 +477,37 @@ Users should be able to manage their account settings.
 Users should be able to earn and redeem loyalty rewards.
 
 ### Scenario 1: Happy Path
-**Given:** 
+**Given:** A user is logged in and on the loyalty card page
 
-**When:** 
+**When:** The user spends $20 loading their loyalty card
 
-**Then:** 
+**Then:** They earn $5 onto their loyalty card
 
-**Status:** 
+**Status:** In progress
 
-**Evidence:** 
+**Evidence:** N/A
 
 ### Scenario 2: Error Handling
-**Given:** 
+**Given:** A user is logged in and on the loyalty card page
 
-**When:** 
+**When:** They try to load their card and the payment fails
 
-**Then:** 
+**Then:** No rewards money is added to their card
 
-**Status:** 
+**Status:** In progress
 
-**Evidence:** 
+**Evidence:** N/A
 
 ### Scenario 3: Edge Case
-**Given:** 
+**Given:** A user is logged in and on the loyalty card page
 
-**When:** 
+**When:** They load their card with $10 today and $10 tomorrow
 
-**Then:** 
+**Then:** They earn $5 in rewards after the second transaction
 
-**Status:** 
+**Status:** In Progress
 
-**Evidence:** 
+**Evidence:** N/A
 
 ---
 # 3. Client UAT Log
