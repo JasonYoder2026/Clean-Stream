@@ -255,9 +255,9 @@ Authorized users should be able to unlock doors after hours.
 
 **Then:** The door unlocks for the user
 
-**Status:** In progress
+**Status:** Client Accepted
 
-**Evidence:** N/A
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/104)
 
 ### Scenario 2: Error Handling
 **Given:** A user has less than $20 on their loyalty card
@@ -266,9 +266,9 @@ Authorized users should be able to unlock doors after hours.
 
 **Then:** They receive a popup explaining they must have $20 on their card
 
-**Status:** In progress
+**Status:** Client Accepted
 
-**Evidence:** N/A
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/104)
 
 ### Scenario 3: Edge Case
 **Given:** A user has exactly $20 on their loyalty card
@@ -277,9 +277,9 @@ Authorized users should be able to unlock doors after hours.
 
 **Then:** The door unlocks for the user
 
-**Status:** In progress
+**Status:** Client Accepted
 
-**Evidence:** N/A
+**Evidence:** [PR](https://github.com/jamaki604/CleanStreamLaundryApp/pull/104)
 
 ---
 
@@ -516,14 +516,28 @@ These tests are validated by the client.
 
 | Date | Feature | Client Feedback | Action Required | Resolved (Y/N) |
 |------|---------|-----------------|-----------------|----------------|
-||Feature1||||
+|10/2025|Making Payments|Client confirmed payment flow works correctly with test card|None|Y|
+|10/2025|Scanning QR Codes|Client verified QR scanning routes correctly to payment screen|None|Y|
+|11/2025|Loyalty Card|Client confirmed loading balance works and displays correctly|None|Y|
+|02/2026|Machine Availability|Client confirmed machines display properly per location|None|Y|
+|11/2025|Account Creation|Client confirmed proper auth flow|None|Y|
+|02/2026|Notifications|Client verified notification arrives|None|Y|
+|03/2026|Unlock doors|Client verified door unlocking mechism is mocked|Implement real API|N|
+|02/2026|Monthly Report|Client request yearly selection tabs|Add year select tabs|N|
+|11/2025|Request Refund|Client verified users can submit refund requests|None|Y|
+|02/2026|Find locations on Map|Client confirmed map focuses on selected location|None|Y|
+|11/2025|Light/Dark mode|Client confirmed theme toggle worked correctly|None|Y|
+|02/2026|Account Management|Client confirmed account management page worked|None|Y|
+|-|Loyalty Rewards|-|Under developement|N|
 
 ---
 
 # 4. Open Acceptance Risks
 
-## Risk1
-- Risk:
-- Mitigation Plan:
+## Risk1: Incomplete Feature Implementation
+- Risk: Some features such as Unlock Doors After Hours and Loyalty Rewards are still in progress and may not be fully tested before final delivery.
+- Mitigation Plan: Prioritize completion and internal testing before the next client review. Provide a demonstration build for validation once implementation is complete.
 
-## Risk2
+## Risk2: External Service Dependencies
+- Risk: Payment processing and email notifications rely on external services (e.g., payment gateway and email provider). Service outages could affect system behavior during testing.
+- Mitigation Plan: Ensure proper error handling for service failures.
