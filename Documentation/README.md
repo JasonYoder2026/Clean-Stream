@@ -4,3 +4,5 @@
 - Manual on how to replicate our development environment and contribute to our project
 ## [Deployment.md](Deployment.md)
 - A manual on how to deploy and maintain the application
+## [UAT.md](uat.md)
+- User acceptance testing guide
