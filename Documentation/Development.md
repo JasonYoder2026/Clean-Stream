@@ -201,6 +201,14 @@ To run an individual test, you can run ```deno test --reload supabase/functions/
 - Navigate to localhost:8080 in a browser, there you will see the webapp
 - Note: Only the webapp can be ran using Docker, as emulators require virtualization to run
 
+### Supabase Functions
+- To edit the Supabase functions with the container, run the following:
+- ```docker compose run dev bash```
+- ```npm install```
+- ```supabase login```
+- ```supabase link```
+- ```supabase functions deploy```
+
 
 
 
