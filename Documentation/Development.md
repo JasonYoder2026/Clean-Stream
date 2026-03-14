@@ -206,8 +206,7 @@ To run an individual test, you can run ```deno test --reload supabase/functions/
 - ```docker compose run dev bash```
 - ```npm install```
 - ```supabase login```
-- ```supabase link```
-- ```supabase functions deploy```
+- From here you can continue as normal
 
 
 
