@@ -1,13 +1,13 @@
-# Development Environment Manual
+# Development Environment Manual - Mobile Client
 
 ## How does the System work?
 
-We are using multiple different technologies to make this happen. We are using [Supabase](https://supabase.com/docs/reference/dart/introduction) as our back end to handle user authentication. We will be using [Nayax](https://developerhub.nayax.com) to handle our payment processing as well as communicating with the laundry machines on the device. The language that this will be written in is [Dart](https://dart.dev/docs) utalizing the [Flutter](https://flutter.dev/?utm_source=google&utm_medium=cpc&utm_campaign=brand_sem&utm_content=na_us&gclsrc=aw.ds&gad_source=1&gad_campaignid=12961050228&gbraid=0AAAAAC-INI98espIDFsODzFO_aWp0EhpI&gclid=CjwKCAjw3tzHBhBREiwAlMJoUt8vkUU3NjmCHJG-pewF5kNrfZzxmrRCREMAxcXoAR-l6n7s3j0dGRoCmG0QAvD_BwE) framework. 
+We are using multiple different technologies to make this happen. We are using [Supabase](https://supabase.com/docs/reference/dart/introduction) as our back end to handle user authentication. We will be using [Nayax](https://developerhub.nayax.com) to for communicating with the laundry machines on the device. We use [Stripe](https://docs.stripe.com/) for payment processing. The language that this will be written in is [Dart](https://dart.dev/docs) utalizing the [Flutter](https://flutter.dev/?utm_source=google&utm_medium=cpc&utm_campaign=brand_sem&utm_content=na_us&gclsrc=aw.ds&gad_source=1&gad_campaignid=12961050228&gbraid=0AAAAAC-INI98espIDFsODzFO_aWp0EhpI&gclid=CjwKCAjw3tzHBhBREiwAlMJoUt8vkUU3NjmCHJG-pewF5kNrfZzxmrRCREMAxcXoAR-l6n7s3j0dGRoCmG0QAvD_BwE) framework. 
 
 ## Install Prerequisites
 
-* We recommended installing [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gad_campaignid=21831783525&gbraid=0AAAAAC-IOZkwrUYtBbUxwVwTQTcwtHKqh&gclid=CjwKCAjw3tzHBhBREiwAlMJoUlUqWZvUnSc3QmXnzmvaXCqed31h13VPWRSIrh4R3v5epIR4NE2qcxoCW-8QAvD_BwE) for development of this project, as it is easy to use phone emulators with. You can also use [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) as Android Studio is a fork of it, but are limited to browser testing.
-  * In either Android Studio or IntelliJ IDEA, whichever you choose:
+* We recommended installing [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gad_campaignid=21831783525&gbraid=0AAAAAC-IOZkwrUYtBbUxwVwTQTcwtHKqh&gclid=CjwKCAjw3tzHBhBREiwAlMJoUlUqWZvUnSc3QmXnzmvaXCqed31h13VPWRSIrh4R3v5epIR4NE2qcxoCW-8QAvD_BwE) for development of this project, as it is easy to use phone emulators with. 
+  * In either Android Studio:
     * Navigate to File -> Settings
     * Go to the Plugins tab
     * Search for and install these plugins
@@ -209,6 +209,63 @@ To run an individual test, you can run ```deno test --reload supabase/functions/
 - From here you can continue as normal
 
 
+# Deveopment Enviornment Manual - Admin
 
+## How does the system work?
+The system uses the same back end and database as the mobile client. The front end is built with [React](https://react.dev/) with Vite.
+
+## Install Prerequisites
+We recommend using VScode for development, but you can use whichever IDE you're comforatable with for web development. 
+You will also need [Node Package Manager](https://nodejs.org/en/download) to install the node modules and React.
+
+## Clone Repository
+
+First step is going to be to go to the [repository](https://github.com/JasonYoder2026/CleanStreamWeb) on GitHub. Once you get there you'll click on code then open with GitHub desktop.
+
+<img width="1501" height="801" alt="Screenshot 2025-10-21 at 2 30 35 PM" src="https://github.com/user-attachments/assets/f2e2c7a0-e443-4cf0-b3a1-206b6ce4870b" />
+
+Once you get into GitHub desktop you will click clone repository to clone it.
+
+## Setup
+Once it's cloned, navigate to the root of the repository and run ```npm install```. This will install all dependencies. <br>
+
+Inside of the root of the project structure you will need to create a .env file. This is where you will store the API keys that are needed by the program to run. It should look something like this: 
+
+```
+SUPABASE_URL= "Supabase URL goes here"
+ANON_KEY="ANON Key goes here"
+```
+Contact Jake King for a copy of the .env file - motokingjr@sbcglobal.net
+
+## File Structure
+The current folder structure looks like this. All code lies in src/<br>
+<img width="273" height="732" alt="image" src="https://github.com/user-attachments/assets/d2afddb0-856a-447e-a70f-75b19051cdd9" /><br>
+
+### Assets
+These are all of the images used in the program
+
+### Components
+These are all of the UI components that get rendered.
+
+### DI
+This is the dependency injection.
+
+### Interfaces
+This is the services that external repositories implement.
+
+### Styles
+This is the styles for the all and specific components.
+
+### Supabase
+This is implementations of the services in Interfaces/
+<br>
+
+The remaining files are boilerplate code for the system to compile and run.
+
+## Running the project
+To run the project locally, run ```npm run dev``` and go to localhost:5173 ina browser.
+
+## Testing
+To run the tests in the project run ```npm run test:coverage```.
 
 
