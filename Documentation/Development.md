@@ -136,7 +136,12 @@ This folder will have the exact same structure as inside of our lib folder. Only
  
 ### Testing the Project
 To test the client code, from the root of the project run ```flutter test --coverage```.  
-You can also right click on a test file or selection of test files in Android Studio and click run or run with coverage so avoid running unneeded tests.
+You can also right click on a test file or selection of test files in Android Studio and click run or run with coverage so avoid running unneeded tests.  
+For the integration tests, you will need to have the local database set up and configured (shown at the bottom of this document), then create a tests.env file in the root with the local database url and key like so:
+```SUPABASE_URL=```
+```SUPABASE_ANON_KEY=```
+```SUPABASE_SERVICE_ROLE_KEY=```  
+All of those components are given to you by the Supabase CLI
 
 ## Replicating via Docker
 
