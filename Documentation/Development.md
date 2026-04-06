@@ -1,10 +1,11 @@
-# Development Environment Manual - Mobile Client
+# Development Environment Manual 
 
-## How does the System work?
+## System Overview
 
-We are using multiple different technologies to make this happen. We are using [Supabase](https://supabase.com/docs/reference/dart/introduction) as our back end to handle user authentication. We will be using [Nayax](https://developerhub.nayax.com) to for communicating with the laundry machines on the device. We use [Stripe](https://docs.stripe.com/) for payment processing. The language that this will be written in is [Dart](https://dart.dev/docs) utalizing the [Flutter](https://flutter.dev/?utm_source=google&utm_medium=cpc&utm_campaign=brand_sem&utm_content=na_us&gclsrc=aw.ds&gad_source=1&gad_campaignid=12961050228&gbraid=0AAAAAC-INI98espIDFsODzFO_aWp0EhpI&gclid=CjwKCAjw3tzHBhBREiwAlMJoUt8vkUU3NjmCHJG-pewF5kNrfZzxmrRCREMAxcXoAR-l6n7s3j0dGRoCmG0QAvD_BwE) framework. 
+We are using multiple different technologies to make this happen. We are using [Supabase](https://supabase.com/docs/reference/dart/introduction) as our back end to handle user authentication. We will be using [Nayax](https://developerhub.nayax.com) to for communicating with the laundry machines on the device. We use [Stripe](https://docs.stripe.com/) for payment processing. The mobile client uses [Dart](https://dart.dev/docs) utalizing the [Flutter](https://flutter.dev/?utm_source=google&utm_medium=cpc&utm_campaign=brand_sem&utm_content=na_us&gclsrc=aw.ds&gad_source=1&gad_campaignid=12961050228&gbraid=0AAAAAC-INI98espIDFsODzFO_aWp0EhpI&gclid=CjwKCAjw3tzHBhBREiwAlMJoUt8vkUU3NjmCHJG-pewF5kNrfZzxmrRCREMAxcXoAR-l6n7s3j0dGRoCmG0QAvD_BwE) framework, while the admin dashboard uses [React](https://react.dev/) with [Vite](https://vite.dev/guide/).
 
-## Install Prerequisites
+## Mobile Client Development
+### Install Prerequisites
 
 * We recommended installing [Android Studio](https://developer.android.com/studio?gclsrc=aw.ds&gad_source=1&gad_campaignid=21831783525&gbraid=0AAAAAC-IOZkwrUYtBbUxwVwTQTcwtHKqh&gclid=CjwKCAjw3tzHBhBREiwAlMJoUlUqWZvUnSc3QmXnzmvaXCqed31h13VPWRSIrh4R3v5epIR4NE2qcxoCW-8QAvD_BwE) for development of this project, as it is easy to use phone emulators with. 
   * In either Android Studio:
@@ -16,23 +17,10 @@ We are using multiple different technologies to make this happen. We are using [
     * Restart your IDE for these to take affect
 * We also recommend downloading [GitHub Desktop](https://desktop.github.com/download/).
 * All of our depedencies and their versions are managed in our pubspec.yaml file.
-* Docker is needed to run the Supabase CLI, download it [here](https://www.docker.com/products/docker-desktop/).
-* Node Package Manager is needed to install the Supabase CLI. Instructions to download [here](https://nodejs.org/en/download).
-* Install Deno (this is the service that is used to serve the functions).
-  * For Windows, run ```irm https://deno.land/install.ps1 | iex``` in PowerShell
-  * For MacOS, run ```brew install deno```
 
-## Clone Project
-First step is going to be to go to the [repository](https://github.com/jamaki604/CleanStreamLaundryApp/tree/AutoLogIn) on GitHub. Once you get there you'll click on code then open with GitHub desktop.
+### Flutter Installation
 
-<img width="1501" height="801" alt="Screenshot 2025-10-21 at 2 30 35 PM" src="https://github.com/user-attachments/assets/f2e2c7a0-e443-4cf0-b3a1-206b6ce4870b" />
-
-Once you get into GitHub desktop you will click clone repository to clone it.
-
-
-## Flutter Installation
-
-### Mac
+#### Mac
 To install Flutter on Mac you will need to use Homebrew. To install Homebrew place this into your terminal:
 
 ```
@@ -44,7 +32,7 @@ After that is complete you'll want to run this in your terminal then you're good
 brew install --cask flutter
 ```
 
-### Windows
+#### Windows
 To install Flutter on Windows:
 - Download the zip file [here](https://docs.flutter.dev/install/manual)
 - Unzip the folder
@@ -65,8 +53,15 @@ To install Flutter on Windows:
   - Click Ok three (3) times
   - Restart your computer to make sure the PATH variable gets updated
 
+### Clone Project
+First step is going to be to go to the [repository](https://github.com/jamaki604/CleanStreamLaundryApp/tree/AutoLogIn) on GitHub. Once you get there you'll click on code then open with GitHub desktop.
+
+<img width="1501" height="801" alt="Screenshot 2025-10-21 at 2 30 35 PM" src="https://github.com/user-attachments/assets/f2e2c7a0-e443-4cf0-b3a1-206b6ce4870b" />
+
+Once you get into GitHub desktop you will click clone repository to clone it.
+
 ### Get Dependencies 
-The first step will be to open this project in Andriod Studio, This project uses multiple different dart/flutter packages. Flutter has a very easy package manager system. In the terminal of Andriod studio run the command: 
+The first step will be to open this project in Andriod Studio, This project uses multiple different dart/flutter packages. Flutter has a very easy package manager system. In the terminal of Andriod studio from the root of the project run the command: 
 
 ```
 flutter pub get 
@@ -81,22 +76,9 @@ flutter test --coverage
 You should see a result that looks something like this: 
 <img width="632" height="240" alt="Screenshot 2025-10-21 at 2 29 12 PM" src="https://github.com/user-attachments/assets/ad2cadf7-5998-4a91-a628-d701c2d01ae2" />
 
-### Syncing Supabase Functions 
-__Any time you clone the repo (first or hundredth) you need to follow these steps!__ <br>
-In order to do anything with the Supabase functions, have Docker running and be signed into the Supabase account on a browser. Contact Jake King for the login information - motokingjr@sbcglobal.net.
-- From the root of the project run ```npm install```
-- Run ```npx supabase login```
-- Login with the authentication code
-- Run ```npx supabase link --project-ref <PROJECT_ID_HERE>```
-- Make sure your functions are up-to-date with ```npm run supabase:update-functions```
+### Important Files
 
-### Deploying/updating Supabase Edge Functions
-Before making changes, ensure your functions are up to date with ```npm run supabase:update-functions```. <br>
-To deploy changes you've made, run ```npx supabase functions deploy <FUNCTION_NAME>```.
-
-## Important Files
-
-### Environment file
+#### Environment file
 Inside of the root of the project structure you will need to create a .env file. This is where you will store the API keys that are needed by the program to run. It should look something like this: 
 
 ```
@@ -132,26 +114,10 @@ This is the folder where all of our implementations of our interfaces reside.
 #### Testing
 This folder will have the exact same structure as inside of our lib folder. Only difference is that this directory will be where all of our tests reside. 
 
-### Our backend functions are inside the supabase/ directory.
 
-Each function gets its own folder. Each function has an index.ts (the serve() part) and a logic.ts (the logic behind the function). Additionally, all logic in a function is tested in a logic.test.ts file.
-<br>
-<img width="212" height="442" alt="image" src="https://github.com/user-attachments/assets/127cd4e2-ce1e-4d8c-b732-4e973daf9e07" />
-<br>
+### Running the Project
 
-## Running the Project
-
-- You can use either a browser or phone emulator to run and test the code
-- To use a browser:
-  - Click the three lines next to the debug button
-  - <img width="915" height="467" alt="image" src="https://github.com/user-attachments/assets/79441b25-7d87-4e39-987b-5075ab490dcc" />
-  - Click "Edit"
-  - In the "Additional run args:" field enter "--web-port=8080"
-  - <img width="867" height="508" alt="image" src="https://github.com/user-attachments/assets/1a030f16-d86b-4987-90dc-b577246e0b8c" />
-  - Click "Ok"
-  - Select a web browser from the dropdown to run the code on
-  - Run main.dart<br>
-  <img width="827" height="303" alt="image" src="https://github.com/user-attachments/assets/e7f9784a-6c36-4a9c-a164-1b984d02462f" /><br>
+- You should use a phone emulator to run and test the code
 - To use a phone emulator you need to use Android Studio
   - On the right open Device Manager
   - <img width="783" height="673" alt="image" src="https://github.com/user-attachments/assets/a9558d6b-d2aa-469c-b4c0-916b5b4f18d1" />
@@ -168,20 +134,13 @@ Each function gets its own folder. Each function has an index.ts (the serve() pa
   - Once it is booted you will see it as an option for the run source at the top of the screen
   - Select the device from the dropdown and run main.dart
  
-## Testing the Project
+### Testing the Project
+To test the client code, from the root of the project run ```flutter test --coverage```.  
+You can also right click on a test file or selection of test files in Android Studio and click run or run with coverage so avoid running unneeded tests.
 
-### Frontend
-To test the client code, from the root of the project run ```flutter test --coverage```
+## Replicating via Docker
 
-### Backend Functions
-To run the Supabase tests run ```npm run test:coverage``` from the project root.
-Coverage will show in the CLI, but you can serve the index.html in coverage_deno/html/index.html with something like Live Server for a visual representation.
-
-To run an individual test, you can run ```deno test --reload supabase/functions/<FUNCTION_NAME>```.
-
-# Replicating via Docker
-
-## Install prerequisites
+### Install prerequisites
 - Download and install Docker Desktop
   - https://www.docker.com/products/docker-desktop/
   - Instructions for specific OSs are below
@@ -189,11 +148,11 @@ To run an individual test, you can run ```deno test --reload supabase/functions/
     - MacOS: https://docs.docker.com/desktop/setup/install/mac-install/
     - Linux: https://docs.docker.com/desktop/setup/install/linux/
 - After running the executable and installing, start Docker
-## Clone the repository
+### Clone the repository
 - Clone the Clean Stream Laundry repository
   - ``` git clone https://github.com/jamaki604/CleanStreamLaundryApp.git ```
 
-## Run
+### Run
 - From the root of the repository run:
   - ``` docker compose up --build ```
 - Note: the initial build can take some time
@@ -209,16 +168,13 @@ To run an individual test, you can run ```deno test --reload supabase/functions/
 - From here you can continue as normal
 
 
-# Deveopment Enviornment Manual - Admin
+## Admin Dashboard
 
-## How does the system work?
-The system uses the same back end and database as the mobile client. The front end is built with [React](https://react.dev/) with Vite.
-
-## Install Prerequisites
+### Install Prerequisites
 We recommend using VScode for development, but you can use whichever IDE you're comforatable with for web development. 
 You will also need [Node Package Manager](https://nodejs.org/en/download) to install the node modules and React.
 
-## Clone Repository
+### Clone Repository
 
 First step is going to be to go to the [repository](https://github.com/JasonYoder2026/CleanStreamWeb) on GitHub. Once you get there you'll click on code then open with GitHub desktop.
 
@@ -226,7 +182,7 @@ First step is going to be to go to the [repository](https://github.com/JasonYode
 
 Once you get into GitHub desktop you will click clone repository to clone it.
 
-## Setup
+### Setup
 Once it's cloned, navigate to the root of the repository and run ```npm install```. This will install all dependencies. <br>
 
 Inside of the root of the project structure you will need to create a .env file. This is where you will store the API keys that are needed by the program to run. It should look something like this: 
@@ -237,35 +193,74 @@ ANON_KEY="ANON Key goes here"
 ```
 Contact Jake King for a copy of the .env file - motokingjr@sbcglobal.net
 
-## File Structure
+### File Structure
 The current folder structure looks like this. All code lies in src/<br>
 <img width="273" height="732" alt="image" src="https://github.com/user-attachments/assets/d2afddb0-856a-447e-a70f-75b19051cdd9" /><br>
 
-### Assets
+#### Assets
 These are all of the images used in the program
 
-### Components
+#### Components
 These are all of the UI components that get rendered.
 
-### DI
+#### DI
 This is the dependency injection.
 
-### Interfaces
+#### Interfaces
 This is the services that external repositories implement.
 
-### Styles
+#### Styles
 This is the styles for the all and specific components.
 
-### Supabase
+#### Supabase
 This is implementations of the services in Interfaces/
 <br>
 
 The remaining files are boilerplate code for the system to compile and run.
 
-## Running the project
+### Running the project
 To run the project locally, run ```npm run dev``` and go to localhost:5173 ina browser.
 
-## Testing
+### Testing
 To run the tests in the project run ```npm run test:coverage```.
 
 
+## Backend Development
+The backend code is the supabase/ folder in the mobile client repo [here](https://github.com/jamaki604/CleanStreamLaundryApp).
+
+### Install Dependencies
+* Docker is needed to run the Supabase CLI, download it [here](https://www.docker.com/products/docker-desktop/).
+* Node Package Manager is needed to install the Supabase CLI. Instructions to download [here](https://nodejs.org/en/download).
+* Install Deno (this is the service that is used to serve the functions).
+  * For Windows, run ```irm https://deno.land/install.ps1 | iex``` in PowerShell
+  * For MacOS, run ```brew install deno```
+
+#### Serverless Functions
+Our backend functions are inside the supabase/functions directory
+Each function gets its own folder. Each function has an index.ts (the serve() part) and a logic.ts (the logic behind the function). Additionally, all logic in a function is tested in a logic.test.ts file.
+<br>
+<img width="212" height="442" alt="image" src="https://github.com/user-attachments/assets/127cd4e2-ce1e-4d8c-b732-4e973daf9e07" />
+<br>
+
+### Syncing Supabase Functions 
+__Any time you clone the repo (first or hundredth) you need to follow these steps!__ <br>
+In order to do anything with the Supabase functions, have Docker running and be signed into the Supabase account on a browser. Contact Jake King for the login information - motokingjr@sbcglobal.net.
+- From the root of the project run ```npm install```
+- Run ```npx supabase login```
+- Login with the authentication code
+- Run ```npx supabase link --project-ref <PROJECT_ID_HERE>```
+- Make sure your functions are up-to-date with ```npm run supabase:update-functions```
+
+### Deploying/updating Supabase Edge Functions
+Before making changes, ensure your functions are up to date with ```npm run supabase:update-functions```. <br>
+To deploy changes you've made, run ```npx supabase functions deploy <FUNCTION_NAME>```.
+
+### Testing Functions
+To run the Supabase tests run ```npm run test:coverage``` from the project root.
+Coverage will show in the CLI, but you can serve the index.html in coverage_deno/html/index.html with something like Live Server for a visual representation.
+
+To run an individual test, you can run ```deno test --reload supabase/functions/<FUNCTION_NAME>```.
+
+### Database
+When making changes to the schema, use the supabase local development convention ([docs here](https://supabase.com/docs/guides/local-development)).   
+To make changes to the local database tables, modify the seed/*.sql files to seed the data you need for tests. After you make a seed change, you must run ```npx supabase db reset``` for the changes to occur. 
