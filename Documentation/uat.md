@@ -4,6 +4,8 @@
 
 ---
 
+# Mobile Application
+
 # 1. Feature Overview
 
 | Feature | Priority | Iteration | Client Facing (Y/N) |
@@ -541,3 +543,105 @@ These tests are validated by the client.
 ## Risk2: External Service Dependencies
 - Risk: Payment processing and email notifications rely on external services (e.g., payment gateway and email provider). Service outages could affect system behavior during testing.
 - Mitigation Plan: Ensure proper error handling for service failures.
+
+
+# Admin Dashboard
+
+# 1. Feature Overview
+
+| Feature | Priority | Iteration | Client Facing (Y/N) |
+|---------|----------|-----------|---------------------|
+|Refund Dashboard|High|4|Y|
+|Locations Dashboard|High|4|Y|
+|Main Dashboard|Medium|4|Y|
+
+
+---
+
+# 2. Acceptance Scenarios
+
+## Feature: Refund Dashboard
+Employees should be able to view pending refunds, and either approve or deny the request.
+
+### Scenario 1: Happy Path
+**Given:** The admin is logged into the admin portal. 
+
+**When:** They navigate the refund page, and look at the table and either click the approve or deny button.
+
+**Then:** The system will process the refund if it is accepted, or let the user know it has been denied if it has been denied. 
+
+**Status:** In progress
+
+**Evidence:** [PR](https://github.com/JasonYoder2026/CleanStreamWeb/pull/18)
+
+### Scenario 2: Error Handling
+**Given:** The admin is logged into the admin portal. 
+
+**When:** The admin clicks approve or deny, and an error is popped up. 
+
+**Then:** The user sees a popup with the error message and no refund occurs.
+
+**Status:** In progress
+
+**Evidence:** [PR](https://github.com/JasonYoder2026/CleanStreamWeb/pull/18)
+
+### Scenario 3: Edge Case
+**N/A**
+
+
+## Feature: Locations Dashboard
+Admins should be able to view all locations at a selected location. They should be able to see the machine's type, status, and price. They should also be able to add locations, add machines, and edit machine information.
+
+### Scenario 1: Happy Path
+**Given:** The admin is logged into the admin portal. 
+
+**When:** The admin navigates to the locations dashboard.
+
+**Then:** They will be able to view machine's type status, and price, they will also be able to edit location/machine information. 
+
+**Status:** In progress
+
+**Evidence:** NEEDS PR
+
+### Scenario 2: Error Handling
+**Given:** The admin is logged into the admin portal. 
+
+**When:** The admin navigates to the locations dashboard.
+
+**Then:** The user sees a popup with the error message.
+
+**Status:** In progress
+
+**Evidence:** NEEDS PR
+
+### Scenario 3: Edge Case
+**N/A**
+---
+## Feature: Main Dashboard
+Admins should be able statistics about the company such as amount of money made today, amount of money made this month, and the traffic at certain hours. 
+
+### Scenario 1: Happy Path
+**Given:** The admin is logged into the admin portal. 
+
+**When:** The admin logs in the first page they see is the statistics.
+
+**Then:** They will be able to view all of the statistics. 
+
+**Status:** In progress
+
+**Evidence:** NEEDS PR'S
+
+### Scenario 2: Error Handling
+**Given:** The admin is logged into the admin portal. 
+
+**When:** The admin is logged in, and is taken to the main dashboard.
+
+**Then:** The user sees a popup with the error message on the specific widget that is failing.
+
+**Status:** In progress
+
+**Evidence:** NEEDS PR'S
+
+### Scenario 3: Edge Case
+**N/A**
+
