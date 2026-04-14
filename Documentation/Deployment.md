@@ -23,5 +23,3 @@ flutter build ipa
 ```
 #### App Store:
 1. For deploying to the App Store follow: https://docs.flutter.dev/deployment/ios
-## Web Build:
-1. For deploying to the Web follow: https://docs.flutter.dev/deployment/web
