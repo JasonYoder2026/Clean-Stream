@@ -551,9 +551,9 @@ These tests are validated by the client.
 
 | Feature | Priority | Iteration | Client Facing (Y/N) |
 |---------|----------|-----------|---------------------|
-|Refund Dashboard|High|4|Y|
-|Locations Dashboard|High|4|Y|
-|Main Dashboard|Medium|4|Y|
+|Refund Dashboard|High|5|Y|
+|Locations Dashboard|High|5|Y|
+|Main Dashboard|Medium|5|Y|
 
 
 ---
