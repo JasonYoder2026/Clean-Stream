@@ -601,7 +601,7 @@ Admins should be able to view all locations at a selected location. They should 
 
 **Status:** In progress
 
-**Evidence:** NEEDS PR
+**Evidence:** [PR](https://github.com/JasonYoder2026/CleanStreamWeb/pull/30)
 
 ### Scenario 2: Error Handling
 **Given:** The admin is logged into the admin portal. 
@@ -612,7 +612,7 @@ Admins should be able to view all locations at a selected location. They should 
 
 **Status:** In progress
 
-**Evidence:** NEEDS PR
+**Evidence:** [PR](https://github.com/JasonYoder2026/CleanStreamWeb/pull/30)
 
 ### Scenario 3: Edge Case
 **N/A**
@@ -629,7 +629,7 @@ Admins should be able statistics about the company such as amount of money made 
 
 **Status:** In progress
 
-**Evidence:** NEEDS PR'S
+**Evidence:** [PR](https://github.com/JasonYoder2026/CleanStreamWeb/pull/30)
 
 ### Scenario 2: Error Handling
 **Given:** The admin is logged into the admin portal. 
@@ -640,7 +640,7 @@ Admins should be able statistics about the company such as amount of money made 
 
 **Status:** In progress
 
-**Evidence:** NEEDS PR'S
+**Evidence:** [PR](https://github.com/JasonYoder2026/CleanStreamWeb/pull/30)
 
 ### Scenario 3: Edge Case
 **N/A**
