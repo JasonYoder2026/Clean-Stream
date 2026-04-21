@@ -4,6 +4,13 @@
 
 We are using multiple different technologies to make this happen. We are using [Supabase](https://supabase.com/docs/reference/dart/introduction) as our back end to handle user authentication. We will be using [Nayax](https://developerhub.nayax.com) to for communicating with the laundry machines on the device. We use [Stripe](https://docs.stripe.com/) for payment processing. The mobile client uses [Dart](https://dart.dev/docs) utalizing the [Flutter](https://flutter.dev/?utm_source=google&utm_medium=cpc&utm_campaign=brand_sem&utm_content=na_us&gclsrc=aw.ds&gad_source=1&gad_campaignid=12961050228&gbraid=0AAAAAC-INI98espIDFsODzFO_aWp0EhpI&gclid=CjwKCAjw3tzHBhBREiwAlMJoUt8vkUU3NjmCHJG-pewF5kNrfZzxmrRCREMAxcXoAR-l6n7s3j0dGRoCmG0QAvD_BwE) framework, while the admin dashboard uses [React](https://react.dev/) with [Vite](https://vite.dev/guide/).
 
+##TODO list
+### Stripe
+Currently, the Stripe keys are linked to a personal account of a dev for testing. A Stripe account for Clean Stream needs to be set up and the keys swapped. The public key is in the mobile client .env file and the private key is in the Supabase repository key store. (Supabase project dashboard -> Edge Functions -> Secrets) Replace STRIPE_SECRET_KEY with Clean Stream's. If the web app from Flutter project is still going to be used for payments, you need to create a webhook on Stripe using the stripeWebhook invocation URL and replace STRIPE_WEBHOOK_SECRET in Supabase with the new webhook secret. 
+
+### Machine Communication
+Without Nayax, machine communcation is mocked. The machine communication in the mobile repository calls edge functions pind-device and wakeDevice. These two functions should be able to be deleted and replaced with the real implementation when a service is decided upon and purchased. 
+
 ## Mobile Client Development
 ### Install Prerequisites
 
