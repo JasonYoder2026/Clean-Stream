@@ -16,7 +16,7 @@ Here you will see widgets displaying the daily revenue and a graph of the last 3
 
 ---
 
-# Refund Dashboard
+# Refund 
 Clicking the refunds tab on the side bar brings you here. Here you can  
 approve or deny refunds. <br>
 <img width="1837" height="881" alt="image" src="https://github.com/user-attachments/assets/e24ada28-19b2-4af1-a439-1de242a9573e" />
@@ -25,6 +25,12 @@ By clicking Respond, you can approve or deny the request and add a note for your
 
 <img width="567" height="633" alt="image" src="https://github.com/user-attachments/assets/ac247963-3d24-41b8-9ad9-6a2b75a271b9" />
 <br>
+
+---
+
+# Maintenance
+Tapping the Maintenance tab brings you here. On this page you can view maintenance requests from users and delete them as they're taken care off. <br>
+<img width="1595" height="960" alt="image" src="https://github.com/user-attachments/assets/5c0b0628-99de-4cd1-8747-af44f3a42547" />
 
 ---
 
