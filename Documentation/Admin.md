@@ -30,7 +30,9 @@ By clicking Respond, you can approve or deny the request and add a note for your
 
 # Maintenance
 Tapping the Maintenance tab brings you here. On this page you can view maintenance requests from users and delete them as they're taken care off. <br>
-<img width="1595" height="960" alt="image" src="https://github.com/user-attachments/assets/5c0b0628-99de-4cd1-8747-af44f3a42547" />
+<img width="1907" height="901" alt="image" src="https://github.com/user-attachments/assets/d3e1051a-c41d-4a7f-a9ad-5a8947973950" />
+<img width="1907" height="907" alt="image" src="https://github.com/user-attachments/assets/421fadf4-1585-464c-87e3-eaf5be2f42cd" />
+
 
 ---
 
