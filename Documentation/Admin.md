@@ -11,7 +11,8 @@ This is the same login you use for the mobile app, after onboarding has been com
 
 After logging in, you’ll be directed to the home page.  
 Here you will see widgets displaying the daily revenue and a graph of the last 30 days income.<br>
-<img width="1458" height="752" alt="image" src="https://github.com/user-attachments/assets/a522fb3a-ff11-4709-ba4e-666b5708a7a3" />
+<img width="1458" height="752" alt="image" src="https://github.com/user-attachments/assets/ed6a6c2b-cce7-4e9b-92e5-42a28d894465" />
+" />
 
 
 ---
