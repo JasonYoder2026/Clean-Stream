@@ -16,6 +16,10 @@ If you don’t have an account, click the **Create Account** button on the Log I
 Enter the required information, then tap **Sign Up** to create your account and access the application.<br>
 <img width="250" height="500" alt="Screenshot 2026-02-01 at 8 02 45 PM" src="https://github.com/user-attachments/assets/f206fed9-ebdf-4d3c-bb87-52ca4ec77aeb" /><br>
 
+# Verify Email
+after signing up enter your email and then enter the code that was sent to it.
+<img width="306" height="659" alt="Screenshot 2026-04-22 005031" src="https://github.com/user-attachments/assets/ffafcd3d-ee1e-4673-a491-a1b2a5ac65ef" />
+
 
 ---
 # Forgot Password
